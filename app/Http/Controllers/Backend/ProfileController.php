@@ -81,7 +81,7 @@ class ProfileController extends Controller
                 $image = $request->file('foto_profile');
                 $nama_image = time()."_".$image->getClientOriginalName();
                 // isi dengan nama folder tempat kemana file diupload
-                $tujuan_upload = 'public/images/profile';
+                $tujuan_upload = 'public/storage/images/profile';
                 $image->storeAs($tujuan_upload,$nama_image);
             }
 
